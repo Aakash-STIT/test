@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="side">
+    Horizontal Navigation
+    <ul>
+      <li><a routerLink="/policies" routerLinkActive="active">POLICIES</a></li>
+      <li><a routerLink="/students" routerLinkActive="active">STUDENTS</a></li>
+      <li>
+        <a routerLink="/employees" routerLinkActive="active">EMPLOYEES</a>
+      </li>
+      <li><a routerLink="/insert" routerLinkActive="active">INSERT</a></li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content
+    >Main
+    <button (click)="opened = !opened">toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
